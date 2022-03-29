@@ -1,4 +1,14 @@
 
+
+FORK: use the compile.sh script as a hack to fix compile issues. Lost original one which fixed issues that dont always ar
+ise so hopefully Ill be adding those back.
+
+Use bmp-upload.sh to upload over network, it uses the hostname blackmagic (use mdns or avahi etc) and just requires firmw
+are name, it autodetects if .bin or .elf if .bin it auto converts to elf for stm targets at start address 0x08000000 so i
+f using diffeent mcu change that!
+ 
+
+
 # Introduction
 
 blackmagic-espidf is a project which aims to support debugging SWD and JTAG targets over wifi by integrating [blackmagic](https://github.com/blacksphere/blackmagic) probe firmware to the espressif IDF platform for esp8266.
