@@ -1,0 +1,20 @@
+- GDB server on TCP port 2022
+- Serial port server on TCP port 23
+- Serial port over websocket on embedded http server (powered by xterm.js) @ http://192.168.4.1
+- OTA updates over tftp
+- Platform/BMP debug messages terminal over http://192.168.4.1/debug.html
+
+
+## GPIO defaults for esp8266
+
+GPIO0 - SWDIO
+
+GPIO2 - SWCLK
+
+TX0 - UART TXD
+
+RX0  - UART RXD
+
+socat tcp:192.168.4.1:23,crlf -,echo=0,raw,crlf
+
+

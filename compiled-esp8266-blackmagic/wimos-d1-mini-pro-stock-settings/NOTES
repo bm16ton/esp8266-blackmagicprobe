@@ -1,0 +1,2 @@
+python2 /home/maddocks/src/blackmagic-espidf/ESP8266_RTOS_SDK/components/esptool_py/esptool/esptool.py --chip esp8266 --port /dev/ttyUSB0 --baud 460800 --before default_reset --after soft_reset write_flash -z --flash_mode dio --flash_freq 80m --flash_size 16MB 0xd000 /home/maddocks/src/blackmagic-espidf/build/ota_data_initial.bin 0x0 /home/maddocks/src/blackmagic-espidf/build/bootloader/bootloader.bin 0x10000 /home/maddocks/src/blackmagic-espidf/build/blackmagic.bin 0x8000 /home/maddocks/src/blackmagic-espidf/build/partitions_two_ota.bin
+
