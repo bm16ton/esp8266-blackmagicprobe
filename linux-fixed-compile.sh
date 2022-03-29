@@ -7,5 +7,10 @@ make
 make
 cd -
 cp components/esp32-espfs/mkespfsimage/mkespfsimage build/esp32-espfs/mkespfsimage/
+cd ESP8266_RTOS_SDK/tools/kconfig
+CC=gcc make clean
+CC=gcc make
+cd -
+CC=gcc make menuconfig
 make
 
